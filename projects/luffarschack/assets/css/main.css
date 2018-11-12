@@ -1,0 +1,23 @@
+@charset "utf-8";
+body {
+    background: rgba(165, 23, 23, 0.76);
+}
+.grid {
+    border: 1px solid black;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+
+    
+    display: grid;
+    grid-template-areas: 
+        "a b c"
+        "d e f"
+        "g h i"
+}
+.grid-item {
+    border: 1px solid black;
+}
+.grid-item:nth-child(1) {
+    grid-area: b;
+}

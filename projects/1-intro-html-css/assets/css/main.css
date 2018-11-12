@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* Skriv kommentaren här... */
+body {
+    background-color:rgb(25, 163, 137);
+}
+h1 {
+    background-color: red;
+    color:white;
+    text-shadow: 6px 1px 1px #000; /* X Y blur color */
+    text-align: center;
+    line-height:  50px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-decoration: underline;
+    
+}
+h6 {
+    color:aliceblue;
+}
+p {color: aliceblue;
+    font-style: italic;
+}
+ul {
+    border: 1px solid #000; /* Width Apperance Color */
+    padding-left: 30px;
+    list-style-type:none ;
+}
+ul li {
+    color:antiquewhite;
+}
+ul li a {
+   color: orangered;
+    text-decoration: none;
+    font-size: 32px;
+    background-color: blue;
+    
+}
+section {
+    background-color: #9f35be;
+    min-height: 40px;
+    width: 50%;
+    margin: auto; 
+}
+main {
+    background-color: #9f55be;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.box {
+    width: 50px;
+    height: 40px;
+    background-color: aquamarine;
+}
+.box1 {
+    background-color: chartreuse;
+}
+.box2 {
+    background-color: coral;
+    flex: 2;
+}
+.box3 {
+    background-color: crimson;
+}
+.box4 {
+    background-color: darkcyan;
+}
+.box5 {
+    background-color: darkkhaki;
+}
+.box6 {
+    background-color: darkgreen;
+}
+.box7 {
+    background-color: cadetblue;
+}
+.box8 {
+    background-color: darksalmon;
+}
+.box9 {
+    background-color: blueviolet;
+}
+.box10 {
+    background-color: chocolate;
+}
+
+header {
+    height: 200px;
+    background-color: forestgreen;
+    display: flex;
+    
+}

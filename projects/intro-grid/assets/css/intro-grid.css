@@ -1,0 +1,45 @@
+.body {
+    padding: 0;
+    margin: 0;
+}
+.grid {
+    width: 80%;
+    height: 100vh; 
+    border: 1px solid black;
+    margin: auto;
+    
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "left main right"
+        "footer footer footer";
+    grid-template-rows: 150px 50px minmax(200px, auto) 100px;
+}
+.grid-item {
+    border: 1px dashed black;
+}
+.grid-item:nth-child(1) {
+    background: red;
+    grid-area: header;
+}
+.grid-item:nth-child(2) {
+    background: green;
+    grid-area: nav;
+}
+.grid-item:nth-child(3) {
+    background: blue;
+    grid-area: left;
+}
+.grid-item:nth-child(4) {
+    background: purple;
+    grid-area: main;
+}
+.grid-item:nth-child(5) {
+    background: yellow;
+    grid-area: right;
+}
+.grid-item:nth-child(6) {
+    background: orange;
+    grid-area: footer;
+}
