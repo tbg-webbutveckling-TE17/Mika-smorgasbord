@@ -1,0 +1,12 @@
+@charset "utf-8";
+body {
+    background: red;
+}
+article {
+    padding: 1px;
+}
+
+.test {
+    margin: auto;
+    border: 1px solid black;
+}

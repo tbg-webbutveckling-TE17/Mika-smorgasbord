@@ -18,12 +18,6 @@ body {
 .grid-item {
     border: 1px solid black;
 }
-.grid-item:nth-child(even) {
-    background: lightgreen;
-}
-.grid-item:nth-child(odd) {
-    background: orange;
-}
 .grid-item img {
     width: 100%;
     height: 100%;
