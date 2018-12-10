@@ -1,6 +1,6 @@
 @charset "utf-8";
 body {
-    background: #2d67ea;
+    background: green;
     width: 800px;
     height: 1000px;
     margin: auto;
@@ -27,5 +27,5 @@ article {
 }
 
 .test {
-    border: 20px solid black;
+    border: 3px solid black;
 }
