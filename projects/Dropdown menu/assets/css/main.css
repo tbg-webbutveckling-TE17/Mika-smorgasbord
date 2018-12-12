@@ -1,0 +1,35 @@
+body {
+    background: purple;
+}
+.dropbtn {
+    background-color: aqua;
+    color: olivedrab;
+    border: none;
+}
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+.dropdown {
+
+}
+li {
+    padding: 5px;
+    list-style-type: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dorpdown-content a {
+    color: black;
+    padding: inherit;
+    
+}
+.dropdown-content a:hover {background: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: aliceblue;}
