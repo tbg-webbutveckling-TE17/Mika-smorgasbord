@@ -1,6 +1,10 @@
 body {
     background: white;
 }
+.wrapper {
+    background: grey;
+    width: 1200px;
+}
 header {
     background: #4a4343;
     width: 100%;
@@ -17,23 +21,39 @@ nav {
     height: 20px;
 }
 .main {
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+        "1 1 2"
+        "3 3 4"
+        "5 5 6";
 } 
 li {
     list-style-type: none;
 }
 .do {
-    padding-right: 50px;
+    padding-right: 10px;
 }
 .do ul {
     background: #4a4343;
-    width: 718px;
+    width: 750px;
     height: 300px;
 }
-.eo ul {
+.gk {
+    padding-right: 15px;
+}
+.gk ul {
     background: #4a4343;
-    width: 400px;
+    width: 300px;
+    height: 200px;
+}
+.gk ul:nth-child(3) {
+    width: 300px;
+    height: 300px;
+}
+.gk ol ul {
+    width: 100px;
     height: 100px;
+    
 }
 p {
     color: white;
