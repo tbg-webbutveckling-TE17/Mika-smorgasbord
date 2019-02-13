@@ -3,7 +3,8 @@ body {
 }
 .wrapper {
     background: grey;
-    width: 1200px;
+    width: 1000px;
+    justify-content: center;
 }
 header {
     background: #4a4343;
@@ -21,39 +22,42 @@ nav {
     height: 20px;
 }
 .main {
-    display: grid;
-    grid-template-areas: 
-        "1 1 2"
-        "3 3 4"
-        "5 5 6";
+    display: flex;
 } 
 li {
     list-style-type: none;
 }
-.do {
-    padding-right: 10px;
+.row1 {
 }
-.do ul {
+.row1 ul {
     background: #4a4343;
-    width: 750px;
+    width: 600px;
     height: 300px;
 }
-.gk {
-    padding-right: 15px;
+.row2 {
+    padding-left: 15px;
 }
-.gk ul {
+.row2 ul {
     background: #4a4343;
     width: 300px;
     height: 200px;
 }
-.gk ul:nth-child(3) {
+.row2 ul:nth-child(3) {
     width: 300px;
     height: 300px;
 }
-.gk ol ul {
+.row2 ol ul {
     width: 100px;
     height: 100px;
-    
+}
+.something ol {
+    display: flex;
+}
+.something ol ul {
+    margin: auto;
+}
+.row2b ul {
+    height: 100px;
 }
 p {
     color: white;
