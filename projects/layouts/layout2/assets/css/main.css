@@ -1,7 +1,28 @@
 body {
     color: white;
 }
+
 header {
-    background: grey;
+    display: flex;
+}
+
+header img {
+    background-color: grey;
+    width: 200px;
+    height: 100px;
+}
+header a{
+    color: white;
+    background-color: grey;
+    width: 500px;
+    height: 100px;
+    padding-left: 400px;
+    }
+header img:nth-child(2) {
+    height: 100px;
+    width: 200px;
+    
+}
+nav {
     
 }
