@@ -1,3 +1,4 @@
+
 header {
     display: flex;
     justify-content: center;
@@ -11,8 +12,20 @@ nav ul li {
     padding: 10px;
 }
 .center {
-    display: ;
     background: #dcdcdc;
+    display: grid;
     justify-content: center;
-    
+}
+.Pictures {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+footer {
+    background: #dcdcdc;
+    display: flex;
+    height: 200px;
+    border-top: 2px solid black;
 }
