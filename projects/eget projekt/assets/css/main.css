@@ -1,0 +1,36 @@
+body {
+    background: #ff0000;
+}
+h1, h2, p, img {
+    color: gold;
+}
+header {
+    border: 1px solid gold;
+    display: flex;
+}
+main {
+    display: flex;
+    margin-top: 10px;
+}
+main section:nth-child(1) {
+    border: 1px solid gold;
+    margin-right: 10px;
+}
+section:hover {
+    background: #0000b4;
+    transition: 1s;
+        
+}
+main section:nth-child(2) {
+    border: 1px solid gold;
+}
+.mid {
+    border: 1px solid gold;
+    margin: 10px auto auto auto;
+    height: 100%;
+    width: 50%;
+}
+footer {
+    border: 1px solid gold;
+    margin-top: 10px;
+}
