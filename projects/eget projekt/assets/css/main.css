@@ -16,11 +16,7 @@ main section:nth-child(1) {
     border: 1px solid gold;
     margin-right: 10px;
 }
-section:hover {
-    background: #0000b4;
-    transition: 1s;
-        
-}
+
 main section:nth-child(2) {
     border: 1px solid gold;
 }

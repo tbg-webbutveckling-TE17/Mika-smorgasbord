@@ -1,0 +1,13 @@
+body{
+    background: #ff0000;
+}
+h1, h2, p, img {
+    color: gold;
+}
+header{
+    border: 1px solid gold; 
+}
+main{
+    border: 1px solid gold;
+    margin-top: 10px;
+}
