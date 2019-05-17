@@ -19,14 +19,9 @@ main section:nth-child(1) {
 
 main section:nth-child(2) {
     border: 1px solid gold;
-}
-.mid {
-    border: 1px solid gold;
-    margin: 10px auto auto auto;
-    height: 100%;
-    width: 50%;
+    margin-right: 10px;
 }
 footer {
     border: 1px solid gold;
-    margin-top: 100px;
+    margin-top: 155xpx;
 }
