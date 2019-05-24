@@ -1,8 +1,41 @@
 body{
-    background: #ff0000;
+    background: #820088;
 }
 h1, h2, p, img {
     color: gold;
+}
+nav {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+nav a ul {
+    color: gold;
+    text-decoration: none;
+    height: 50px;
+    width: 266px;
+}
+nav a ul:hover {
+    color: aquamarine;
+    background: #8d0303;
+    text-decoration: none;
+}
+nav a ul li {
+    margin-right: 230px;
+    list-style-type: none;
+}
+nav a ul:nth-child(1) {
+    border: 1px solid gold;
+    margin-right: 10px;
+}
+nav a ul:nth-child(2) {
+    border: 1px solid gold;
+}
+nav a ul:nth-child(3) {
+    border: 1px solid gold;
+}
+nav a ul:nth-child(4) {
+    border: 1px solid gold;
 }
 header{
     border: 1px solid gold; 

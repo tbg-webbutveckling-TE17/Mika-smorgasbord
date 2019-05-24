@@ -8,12 +8,14 @@ header section{
     margin-right: 10px;    
 }
 header section:nth-child(1){
-    height: 10%;
-    width: 10%;
+    height: 100%;
+    width: 15%;
 }
 header section:nth-child(2){
-    
+    height: 100%;
+    width: 75%;
 }
 header section:nth-child(3){
-    
+    height: 100%;
+    width: 10%;
 }

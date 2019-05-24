@@ -4,6 +4,31 @@ body{
 h1, h2, p, img {
     color: gold;
 }
+nav {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+nav ul a {
+    color: aliceblue;
+    text-decoration: none;
+}
+nav ul li {
+    margin-right: 230px;
+    list-style-type: none;
+}
+nav ul:nth-child(1) {
+    border: 1px solid gold;
+}
+nav ul:nth-child(2) {
+    border: 1px solid gold;
+}
+nav ul:nth-child(3) {
+    border: 1px solid gold;
+}
+nav ul:nth-child(4) {
+    border: 1px solid gold;
+}
 header{
     border: 1px solid gold; 
 }
