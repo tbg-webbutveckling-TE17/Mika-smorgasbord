@@ -1,3 +1,8 @@
+
+nav ul li{
+    display: flex;
+    justify-content: flex-end;
+}
 header {
     display: flex;
     height: 100px;
@@ -5,7 +10,7 @@ header {
 }
 header section{
     border: 1px solid black;
-    margin-right: 10px;    
+    margin-right: 10px;
 }
 header section:nth-child(1){
     height: 100%;

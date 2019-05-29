@@ -6,27 +6,38 @@ h1, h2, p, img {
 }
 nav {
     display: flex;
+    margin: auto;
+    justify-content: center;
     margin-bottom: 10px;
     margin-top: 1px;
 }
-nav ul a {
-    color: aliceblue;
+nav a {
     text-decoration: none;
 }
-nav ul li {
+nav a ul {
+    color: aliceblue;
+    height: 50px;
+    width: 266px;
+}
+nav a ul:hover {
+    color: #988def;
+    background: #8d0303;
+}
+nav a li {
     margin-right: 230px;
     list-style-type: none;
 }
-nav ul:nth-child(1) {
+nav a ul:nth-child(1) {
+    border: 1px solid gold;
+    margin-right: 10px;
+}
+nav a ul:nth-child(2) {
     border: 1px solid gold;
 }
-nav ul:nth-child(2) {
+nav a ul:nth-child(3) {
     border: 1px solid gold;
 }
-nav ul:nth-child(3) {
-    border: 1px solid gold;
-}
-nav ul:nth-child(4) {
+nav a ul:nth-child(4) {
     border: 1px solid gold;
 }
 header{

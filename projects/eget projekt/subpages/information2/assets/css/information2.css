@@ -6,8 +6,14 @@ h1, h2, p, img {
 }
 nav {
     display: flex;
+    justify-content: center;
+    margin: auto;
     margin-bottom: 10px;
     margin-top: 1px;
+}
+nav a {
+    text-decoration: none;
+    margin: auto;
 }
 nav a ul {
     color: gold;
@@ -16,11 +22,10 @@ nav a ul {
     width: 266px;
 }
 nav a ul:hover {
-    color: aquamarine;
+    color: #988def;
     background: #8d0303;
-    text-decoration: none;
 }
-nav a ul li {
+nav a li {
     margin-right: 230px;
     list-style-type: none;
 }

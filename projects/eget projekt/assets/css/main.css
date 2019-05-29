@@ -7,32 +7,41 @@ h1, h2, p, img {
 header {
     border: 1px solid gold;
     display: flex;
-}
-nav ul a {
-    color: aliceblue;
-    text-decoration: none;
+    margin: auto;
 }
 nav {
     display: flex;
+    justify-content: center;
     margin-bottom: 10px;
     margin-top: 1px;
+    margin: auto;
 }
-nav ul {
+nav a {
+    text-decoration: none;
 }
-nav ul li {
-    margin-right: 230px;
+nav a ul {
+    color: aliceblue;
+    height: 50px;
+    width: 260px;
+}
+nav a ul li {
     list-style-type: none;
 }
-nav ul:nth-child(1) {
+nav a ul:hover {
+    color: #988def;
+    background: #8d0303;
+}
+nav a ul:nth-child(1) {
+    border: 1px solid gold;
+    margin-right: 10px;
+}
+nav a ul:nth-child(2) {
     border: 1px solid gold;
 }
-nav ul:nth-child(2) {
+nav a ul:nth-child(3) {
     border: 1px solid gold;
 }
-nav ul:nth-child(3) {
-    border: 1px solid gold;
-}
-nav ul:nth-child(4) {
+nav a ul:nth-child(4) {
     border: 1px solid gold;
 }
 main {
@@ -42,6 +51,7 @@ main {
 main section:nth-child(1) {
     border: 1px solid gold;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 main section:nth-child(2) {
@@ -50,5 +60,5 @@ main section:nth-child(2) {
 }
 footer {
     border: 1px solid gold;
-    margin-top: 155xpx;
+    margin-top: 155px;
 }
