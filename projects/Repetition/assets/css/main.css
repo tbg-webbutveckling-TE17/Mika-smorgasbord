@@ -1,0 +1,13 @@
+@charset 'utf-8';
+body {
+    background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Roboto', sans-serif;
+padding: 10px;
+}
+body h1 {
+color: white;
+text-shadow: 1px 1px #000;
+font-size: 25pt;
+}

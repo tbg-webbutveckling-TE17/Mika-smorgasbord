@@ -20,7 +20,7 @@ nav a {
     text-decoration: none;
 }
 nav a ul {
-    color: aliceblue;
+    color: #76ff00;
     height: 50px;
     width: 260px;
 }
@@ -28,8 +28,8 @@ nav a ul li {
     list-style-type: none;
 }
 nav a ul:hover {
-    color: #988def;
-    background: #8d0303;
+    color: #00fdf3;
+    background: #2c1ab7;
 }
 nav a ul:nth-child(1) {
     border: 1px solid gold;
