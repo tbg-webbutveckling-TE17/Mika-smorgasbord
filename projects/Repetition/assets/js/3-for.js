@@ -18,7 +18,7 @@
 //for (var i = 0; i < len; i++) {
 //    console.log(myArr[i]);
 //}
-
+/*
 for (var i = -10; i <= 19; i++) {
     console.log(i);
 }
@@ -32,8 +32,34 @@ for (var i = 301; i <= 333; i += 2) {
         console.log(i);
     }
 }
+
 for (var i = 5; i <= 50; i ++) {
     if (i % 3 == 0 && i % 5 == 0)  {
     console.log(i);
 }
+}
+*//*
+var rows = 5;
+var cols = 5;
+for (var i = 0; i < rows; i++) {
+    for (var ii = 0; ii < cols; ii++) {
+        document.writeln();
+    }
+}
+var multiplier = 9;
+for (var i = 0; i <= 10; i++) {
+    var result = multiplier * i;
+
+}
+
+for (var multiplier = 0; multiplier <= 10; multiplier++) {
+    for (var i = 0; i <= 10; i++) {
+        var result = multiplier * i;
+        document.writeln(multiplier + " * " + i + " = " + result)
+    }
+    document.writeln("<br/>");
+} */
+var choices = ["Pannkaka", "Tacos", "Fiskpinnar", "Hamburgare"];
+for (var i = 0; i < choices.length; i++) {
+    document.writeln(" My " + " #" + (i + 1) + " choice is "+ choices[i]);
 }
