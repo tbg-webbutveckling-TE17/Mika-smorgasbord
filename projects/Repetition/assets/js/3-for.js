@@ -59,7 +59,50 @@ for (var multiplier = 0; multiplier <= 10; multiplier++) {
     }
     document.writeln("<br/>");
 } */
-var choices = ["Pannkaka", "Tacos", "Fiskpinnar", "Hamburgare"];
+/*var choices = ["Pannkaka", "Tacos", "Fiskpinnar", "Hamburgare"];
 for (var i = 0; i < choices.length; i++) {
     document.writeln(" My " + " #" + (i + 1) + " choice is "+ choices[i]);
+}
+*/
+/*
+var choices = ["Pannkaka", "Tacos", "Fiskpinnar", "Hamburgare"];
+for (var i = 0; i < choices.length; i++) {
+    var choiceNum = i + 1;
+    var choiceSuffix;
+
+    if(choiceNum == 1) {
+        choiceSuffix = "st";
+    } else if (choiceNum == 2) {
+        choiceSuffix = "nd";
+    } else if (choiceNum == 3) {
+        choiceSuffix = "rd";
+    } else {
+        choiceSuffix = "th";
+    }
+    document.writeln(" My " + choiceNum + choiceSuffix + " choice is "+ choices[i]);
+} */
+
+/*
+for (var i = 10; i >= 0; i--) {
+    for (var ii = 0; ii <= i; ii++){
+        document.write("* ");
+    }
+    document.write("<br />");
+}*/
+
+/*for (var i = 10; i >= 0; i--) {
+    for (var ii = 10; ii >= i; ii--){
+        document.write("* ");
+    }
+    document.write("<br />");
+}*/
+var rows = 15;
+for (var i = 1; i <= rows; i++) {
+    for (var j = 1; j <= rows - i; j++) {
+        document.write("&nbsp;");
+    }
+    for (var k = 1; k <= i; k++) {
+        document.write('* ');
+    }
+    document.write("<br />");
 }
