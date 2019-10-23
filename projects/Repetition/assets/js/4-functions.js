@@ -1,3 +1,4 @@
+/*
 function twinkleTwinkle() {
     console.log("Blinka lilla stjärna där!");
     console.log("Hur jag undrar var du är...")
@@ -50,4 +51,27 @@ function isEven(x) {
         return false;
     }
 }
-console.log(isEven(10));
+console.log(isEven(2));
+*/
+
+/*
+function KebabToSnake(myStr) {
+    var newStr = myStr.replace(/-/g, "_");
+    return newStr
+}
+console.log(KebabToSnake("Kebab-To-Snake"));
+
+function SnakeToKebab(myStr) {
+    var newStr = myStr.replace(/_/g, "-");
+    return newStr
+}
+console.log(SnakeToKebab("Snake_To_Kebab"));
+*/
+function localScope() {
+    var showScope = 31;
+    console.log(showScope);
+}
+localScope();
+console.log(showScope);
+var showScope = "I'm a global variable";
+console.log(showScope);
