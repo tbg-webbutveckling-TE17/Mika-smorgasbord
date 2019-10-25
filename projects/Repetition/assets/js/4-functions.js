@@ -43,7 +43,7 @@ function quadrupleMe(x) {
 }
 var myFavNumber = quadrupleMe(2);
 console.log(myFavNumber);
-
+*/
 function isEven(x) {
     if (x % 2 == 0) {
         return true;
@@ -52,26 +52,76 @@ function isEven(x) {
     }
 }
 console.log(isEven(2));
-*/
+console.log(isEven(2413));
 
-/*
+
 function KebabToSnake(myStr) {
+    console.log(myStr);
     var newStr = myStr.replace(/-/g, "_");
     return newStr
 }
-console.log(KebabToSnake("Kebab-To-Snake"));
+console.log(KebabToSnake("This-is-Kebab-cased-string"));
 
-function SnakeToKebab(myStr) {
-    var newStr = myStr.replace(/_/g, "-");
-    return newStr
-}
-console.log(SnakeToKebab("Snake_To_Kebab"));
-*/
+
 function localScope() {
     var showScope = 31;
     console.log(showScope);
 }
 localScope();
 console.log(showScope);
+
 var showScope = "I'm a global variable";
 console.log(showScope);
+
+
+var showGlobalVar = 99; //Global variable
+function globalScope() {
+   showGlobalVar = 100;
+   console.log(showGlobalVar);
+
+}
+console.log(showGlobalVar);
+globalScope();
+console.log(showGlobalVar);
+
+function hi() {
+    var name = "namn";
+    console.log(name);
+}
+hi();
+function bye() {
+    console.log(name);
+}
+bye();
+
+
+// Named function
+function sing() {
+    console.log("Im singing in the rain");
+    console.log("Just singing in the rain");
+    console.log("What a glorius feeling!");
+}
+//Higher order function
+setInterval(sing, 500,);
+clearInterval(1);
+setInterval(sing, 2000);
+clearInterval(2);
+
+var intervalExample = setInterval(sing, 2000);
+clearInterval(intervalExample);
+
+//Anonomous function
+var anon = setInterval(function(){
+    console.log("I'm an anonomous function")
+}, 1500);
+
+clearInterval(anon);
+
+function myTimer() {
+    var d = new Date();
+    var time = d.toLocaleTimeString();
+    document.getElementById("timeOutput").innerHTML = time;
+}
+
+myTimer();
+var myTime = setInterval(myTimer, 1000)
