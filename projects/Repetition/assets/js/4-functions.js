@@ -44,6 +44,7 @@ function quadrupleMe(x) {
 var myFavNumber = quadrupleMe(2);
 console.log(myFavNumber);
 */
+
 function isEven(x) {
     if (x % 2 == 0) {
         return true;
@@ -124,4 +125,30 @@ function myTimer() {
 }
 
 myTimer();
-var myTime = setInterval(myTimer, 1000)
+
+var myTime = setInterval(myTimer, 1000);
+
+var stopBtn = document.getElementsByTagName("button")[0];
+stopBtn.addEventListener("mouseenter", function() {
+    clearInterval(myTime);
+    alert("Time is stopped!");
+});
+
+stopBtn.addEventListener("mouseleave", function() {
+    myTime = setInterval(myTimer, 1000);
+})
+
+function tellFortune(jobTitle, geoLog, partner, kids) {
+    var fortune = "You will be a " + jobTitle + "in " + geoLog + "and married to " + partner + "with " + kids + "kids";
+
+}
+var jobArray = ["Dentist", "Police", "Teacher", "", "", "", ""];
+var geoArray = ["", "", "", "", "", "", ""];
+var partnerArray = ["", "", "", "", "", "", ""];
+var kidsArray = ["", "", "", "", "", "", ""];
+
+
+
+
+
+
