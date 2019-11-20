@@ -140,15 +140,19 @@ stopBtn.addEventListener("mouseleave", function() {
 
 function tellFortune(jobTitle, geoLog, partner, kids) {
     var fortune = "You will be a " + jobTitle + "in " + geoLog + "and married to " + partner + "with " + kids + "kids";
-
+    console.log(fortune);
 }
-var jobArray = ["Dentist", "Police", "Teacher", "", "", "", ""];
-var geoArray = ["", "", "", "", "", "", ""];
-var partnerArray = ["", "", "", "", "", "", ""];
-var kidsArray = ["", "", "", "", "", "", ""];
+var jobArray = ["Dentist", "Police", "Teacher", "Baker", "Farmer"];
+var geoArray = ["Sweden", "Denmark", "Russia", "Netherlands", "USA"];
+var partnerArray = ["Anna", "Eva", "Maria", "Karin", "Kristina"];
+var kidsArray = ["1", "3", "0", "5", "2"];
 
 
-
-
-
-
+var randomize = document.getElementsByTagName("button")[1];
+randomize.addEventListener("click", function() {
+    var rndJob = Math.floor(Math.random() * length(jobArray));
+    var rndGeolog = Math.floor(Math.random() * length(geoArray));
+    var rndPartner= Math.floor(Math.random() * partnerArray);
+    var rndKids = Math.floor(Math.random() * kidsArray);
+    tellFortune(jobArray[rndJob], geoArray[rndGeolog], partnerArray[rndPartner], kidsArray[rndKids]);
+});
