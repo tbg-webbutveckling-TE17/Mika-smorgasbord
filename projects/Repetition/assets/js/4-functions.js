@@ -139,7 +139,7 @@ stopBtn.addEventListener("mouseleave", function() {
 })
 
 function tellFortune(jobTitle, geoLog, partner, kids) {
-    var fortune = "You will be a " + jobTitle + "in " + geoLog + "and married to " + partner + "with " + kids + "kids";
+    var fortune = "You will be a " + jobTitle + " in " + geoLog + " and married to " + partner + " with " + kids + " kids";
     console.log(fortune);
 }
 var jobArray = ["Dentist", "Police", "Teacher", "Baker", "Farmer"];
@@ -150,9 +150,29 @@ var kidsArray = ["1", "3", "0", "5", "2"];
 
 var randomize = document.getElementsByTagName("button")[1];
 randomize.addEventListener("click", function() {
-    var rndJob = Math.floor(Math.random() * length(jobArray));
-    var rndGeolog = Math.floor(Math.random() * length(geoArray));
-    var rndPartner= Math.floor(Math.random() * partnerArray);
-    var rndKids = Math.floor(Math.random() * kidsArray);
+    var rndJob = Math.floor(Math.random() * jobArray.length);
+    var rndGeolog = Math.floor(Math.random() * geoArray.length);
+    var rndPartner= Math.floor(Math.random() * partnerArray.length);
+    var rndKids = Math.floor(Math.random() * kidsArray.length);
     tellFortune(jobArray[rndJob], geoArray[rndGeolog], partnerArray[rndPartner], kidsArray[rndKids]);
 });
+
+function dogyearCalculator() {
+    var num = 7;
+    var humanYears = prompt("How old is your dog?");
+    var dogYears = num * humanYears;
+    alert("Your dog is " + dogYears + " in dog years!");
+}
+
+
+dogyearCalculator();
+
+function calculateSupply(age, amountPerDay) {
+    var maxAge = 100;
+    var consumed = amountPerDay * maxAge - age;
+    alert("You will need " + consumed + " potatoes per day to last you until the ripe age of " + maxAge);
+}
+
+var age = prompt("How old are you?")
+var amountPerDay = prompt(Math.round(Number()));
+calculateSupply(age, amountPerDay);
