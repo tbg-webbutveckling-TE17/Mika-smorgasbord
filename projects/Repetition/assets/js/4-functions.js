@@ -138,15 +138,17 @@ stopBtn.addEventListener("mouseleave", function() {
     myTime = setInterval(myTimer, 1000);
 })
 
+
+
 function tellFortune(jobTitle, geoLog, partner, kids) {
     var fortune = "You will be a " + jobTitle + " in " + geoLog + " and married to " + partner + " with " + kids + " kids";
-    console.log(fortune);
+    var printout = document.getElementsByClassName("tellfortune")[0];
+    printout.innerHTML = fortune;
 }
 var jobArray = ["Dentist", "Police", "Teacher", "Baker", "Farmer"];
 var geoArray = ["Sweden", "Denmark", "Russia", "Netherlands", "USA"];
 var partnerArray = ["Anna", "Eva", "Maria", "Karin", "Kristina"];
 var kidsArray = ["1", "3", "0", "5", "2"];
-
 
 var randomize = document.getElementsByTagName("button")[1];
 randomize.addEventListener("click", function() {
@@ -157,22 +159,28 @@ randomize.addEventListener("click", function() {
     tellFortune(jobArray[rndJob], geoArray[rndGeolog], partnerArray[rndPartner], kidsArray[rndKids]);
 });
 
+
+
 function dogyearCalculator() {
     var num = 7;
     var humanYears = prompt("How old is your dog?");
     var dogYears = num * humanYears;
+    
     alert("Your dog is " + dogYears + " in dog years!");
 }
 
 
 dogyearCalculator();
 
+
+
 function calculateSupply(age, amountPerDay) {
     var maxAge = 100;
     var consumed = amountPerDay * maxAge - age;
     alert("You will need " + consumed + " potatoes per day to last you until the ripe age of " + maxAge);
 }
-
 var age = prompt("How old are you?")
 var amountPerDay = prompt(Math.round(Number()));
 calculateSupply(age, amountPerDay);
+
+
