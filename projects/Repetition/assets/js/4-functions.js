@@ -44,7 +44,7 @@ function quadrupleMe(x) {
 var myFavNumber = quadrupleMe(2);
 console.log(myFavNumber);
 */
-
+/*
 function isEven(x) {
     if (x % 2 == 0) {
         return true;
@@ -137,7 +137,7 @@ stopBtn.addEventListener("mouseenter", function() {
 stopBtn.addEventListener("mouseleave", function() {
     myTime = setInterval(myTimer, 1000);
 })
-
+*/
 
 
 function tellFortune(jobTitle, geoLog, partner, kids) {
@@ -148,7 +148,7 @@ function tellFortune(jobTitle, geoLog, partner, kids) {
 var jobArray = ["Dentist", "Police", "Teacher", "Baker", "Farmer"];
 var geoArray = ["Sweden", "Denmark", "Russia", "Netherlands", "USA"];
 var partnerArray = ["Anna", "Eva", "Maria", "Karin", "Kristina"];
-var kidsArray = ["1", "3", "0", "5", "2"];
+var kidsArray = [1, 3, 0, 5, 2];
 
 var randomize = document.getElementsByTagName("button")[1];
 randomize.addEventListener("click", function() {
@@ -160,7 +160,7 @@ randomize.addEventListener("click", function() {
 });
 
 
-
+/*
 function dogyearCalculator() {
     var num = 7;
     var humanYears = prompt("How old is your dog?");
@@ -169,10 +169,7 @@ function dogyearCalculator() {
     alert("Your dog is " + dogYears + " in dog years!");
 }
 
-
 dogyearCalculator();
-
-
 
 function calculateSupply(age, amountPerDay) {
     var maxAge = 100;
@@ -182,5 +179,12 @@ function calculateSupply(age, amountPerDay) {
 var age = prompt("How old are you?")
 var amountPerDay = prompt(Math.round(Number()));
 calculateSupply(age, amountPerDay);
+*/
 
+function keyPressed() {
+    var x = event.key;
+    document.getElementById("demo").innerHTML = "The pressed key was: " + x;
+}
 
+var theWord = ["h", "e", "l", "l", "o"];
+var guessedWord = ["_", "_", "_", "_", "_"];   
