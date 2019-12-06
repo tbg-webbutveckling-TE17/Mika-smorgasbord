@@ -181,10 +181,12 @@ var amountPerDay = prompt(Math.round(Number()));
 calculateSupply(age, amountPerDay);
 */
 
+
 function keyPressed() {
     var x = event.key;
-    document.getElementById("demo").innerHTML = "The pressed key was: " + x;
+    document.getElementById("demo").innerHTML = x;
+    
+    
 }
-
 var theWord = ["h", "e", "l", "l", "o"];
 var guessedWord = ["_", "_", "_", "_", "_"];   
