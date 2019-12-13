@@ -182,11 +182,24 @@ calculateSupply(age, amountPerDay);
 */
 
 
-function keyPressed() {
-    var x = event.key;
-    document.getElementById("demo").innerHTML = x;
-    
-    
-}
+
+document.addEventListener("keypress", function(e){
+    var myGuess = e.key;
+    document.getElementById("demo").innerHTML += myGuess;
+
+    for (let i = 0; i <= theWord.length; i++) {
+        if (myGuess == theWord[i])
+        {
+            guessedWord[i] = myGuess;
+            document.getElementById("guessedLetters").innerHTML = guessedWord;
+        }
+        
+        
+    }
+    guessesLeft--
+    document.getElementById("guessedLetter").innerHTML = guessesLeft;
+});
+
+var guessesLeft = 10;
 var theWord = ["h", "e", "l", "l", "o"];
-var guessedWord = ["_", "_", "_", "_", "_"];   
+var guessedWord = ["_", "_", "_", "_", "_"];
