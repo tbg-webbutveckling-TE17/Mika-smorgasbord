@@ -186,20 +186,47 @@ calculateSupply(age, amountPerDay);
 document.addEventListener("keypress", function(e){
     var myGuess = e.key;
     document.getElementById("demo").innerHTML += myGuess;
-
+    var rndReward = Math.round(Math.random() * 1000);
+    console.log(rndReward);
     for (let i = 0; i <= theWord.length; i++) {
         if (myGuess == theWord[i])
         {
             guessedWord[i] = myGuess;
             document.getElementById("guessedLetters").innerHTML = guessedWord;
+            storedReward = storedReward + rndReward;
+        } else if(theWord.includes(myGuess) == false) {
+            
         }
         
-        
+    }
+    if (guessedWord.includes("_") == false) {
+        wins++;
+        guessedWord = ["_", "_", "_", "_", "_"];
+        guessesLeft = 10;
+        reward = reward + storedReward;
+        storedReward = 0;
     }
     guessesLeft--
-    document.getElementById("guessedLetter").innerHTML = guessesLeft;
-});
+    document.getElementById("guessesLeft").innerHTML = "Du har " + guessesLeft + " gissningar kvar!";
+    if (guessesLeft == 0) {
+     losses++;
+    guessesLeft = 10;
+    guessedWord = ["_", "_", "_", "_", "_"];
+    storedReward = 0;
+    }
+    
 
+
+
+    
+    document.getElementById("reward").innerHTML = "Ditt belöningsbelopp är: " + reward + "$";
+    document.getElementById("wins").innerHTML = "Du har vunnit: " + wins;
+    document.getElementById("losses").innerHTML = "Du har förlorat: " + losses;
+});
+var storedReward = 0;
 var guessesLeft = 10;
+var wins = 0;
+var losses = 0;
+var reward = 0;
 var theWord = ["h", "e", "l", "l", "o"];
 var guessedWord = ["_", "_", "_", "_", "_"];
