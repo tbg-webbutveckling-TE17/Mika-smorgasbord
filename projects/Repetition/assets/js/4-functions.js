@@ -194,10 +194,11 @@ document.addEventListener("keypress", function(e){
             guessedWord[i] = myGuess;
             document.getElementById("guessedLetters").innerHTML = guessedWord;
             storedReward = storedReward + rndReward;
-        } else if(theWord.includes(myGuess) == false) {
-            
-        }
+        } 
         
+    }
+    if(theWord.includes(myGuess) == false) {
+        storedReward = storedReward - rndReward;
     }
     if (guessedWord.includes("_") == false) {
         wins++;
