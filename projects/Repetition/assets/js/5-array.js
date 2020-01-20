@@ -1,4 +1,4 @@
-/*
+var prinToScreen = document.getElementById("testArray");
 var friend1 = "Måns";
 var friend2 = "Sten";
 var friend3 = "Claerence";
@@ -46,11 +46,38 @@ for (let index = 0; index < cars.length; index++) {
     
 }
 prinToScreen.innerHTML = cars.reverse();
-*/
-var prinToScreen = document.getElementById("testArray");
-
 
 var countries = ["Sweden", "Denmark", "Norway", "Finland", "Island"]
 countries.forEach(function(country){ 
     prinToScreen.innerHTML += country + "<br />";
-})
+});
+
+
+var planets = ["earth", "mars", "saturnus", "jupiter"];
+planets.forEach(function(planet){
+    prinToScreen.innerHTML += planet + " - ";
+
+
+});
+prinToScreen.innerHTML = "";
+var number = [1, 32, 44, 112, 3, 5, 6, 9, 12];
+var color = ["red", "green", "blue", "yellow"];
+for (let index = 0; index < number.length; index++) {
+    if(number[index] % 3 === 0) {
+        prinToScreen.innerHTML += number[index] + " ";
+    }
+    
+}
+prinToScreen.innerHTML = "";
+var exampleArray = [1, 2, 3, 4, 5, 6, 7];
+function printReverse(exampleArray) {
+    for (let index = exampleArray.length -1; index >= 0; index--) {
+        prinToScreen.innerHTML += exampleArray[index] + "";
+    }
+}
+printReverse(exampleArray);
+var newArray = [1, 1, 1, 1];
+function isIdentical() {
+    
+}
+
