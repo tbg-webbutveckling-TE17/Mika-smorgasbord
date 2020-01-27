@@ -76,8 +76,43 @@ function printReverse(exampleArray) {
     }
 }
 printReverse(exampleArray);
-var newArray = [1, 1, 1, 1];
-function isIdentical() {
-    
+
+
+prinToScreen.innerHTML = "";
+function isIdentical(array) {
+    for (let index = 0; index < array.length; index++) {
+        if (array[index] != array[0]){
+            return false;
+        }
+        
+
+        
+    }
+    return true;
 }
+isIdentical([1, 1, 1, 1, 1]);
+isIdentical([1, 2, 3, 1, 1]);
+
+function sumArray(array) {
+    var summa = 0;
+    /*for (let index = 0; index < array.length; index++) {
+        summa = array[index] + summa;
+    }
+    */
+   array.forEach(function(value) {
+       summa = value + summa;
+   });
+    return summa;
+}
+sumArray([ 1, 2, 3, 4, 5]);
+function max(array) {
+    var maxValue = array[0];
+    array.forEach(function(value) {
+        if (maxValue < value) {
+            maxValue = value;
+        }});
+    return maxValue;
+}
+
+max([2, 1, 23, 54, 4, 12]);
 
