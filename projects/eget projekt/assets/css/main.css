@@ -1,5 +1,5 @@
 body {
-    background: #ff0000;
+    background: purple;
 }
 h1, h2, p, img {
     color: gold;
@@ -8,6 +8,7 @@ header {
     border: 1px solid gold;
     display: flex;
     margin: auto;
+    padding-bottom: 10px;
 }
 nav {
     display: flex;
@@ -16,47 +17,27 @@ nav {
     margin-top: 1px;
     margin: auto;
 }
-nav a {
-    text-decoration: none;
-}
-nav a ul {
-    color: #76ff00;
-    height: 50px;
-    width: 260px;
-}
-nav a ul li {
+nav li {
     list-style-type: none;
+    padding-right: 10px;
 }
-nav a ul:hover {
+nav li a {
+    border: 1px solid gold;
+    text-decoration: none;
+    color: gold;
+}
+nav li a:hover {
     color: #00fdf3;
     background: #2c1ab7;
-}
-nav a ul:nth-child(1) {
-    border: 1px solid gold;
-    margin-right: 10px;
-}
-nav a ul:nth-child(2) {
-    border: 1px solid gold;
-}
-nav a ul:nth-child(3) {
-    border: 1px solid gold;
-}
-nav a ul:nth-child(4) {
-    border: 1px solid gold;
 }
 main {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-main section:nth-child(1) {
+main section {
     border: 1px solid gold;
     margin-right: 10px;
     margin-bottom: 10px;
-}
-
-main section:nth-child(2) {
-    border: 1px solid gold;
-    margin-right: 10px;
 }
 footer {
     border: 1px solid gold;

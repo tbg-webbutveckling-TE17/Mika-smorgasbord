@@ -49,20 +49,28 @@ var junkObject = {
 };
 
 output.innerHTML = junkObject.pet.species;
-
+output.innerHTML = "";
 var posts = [
     {
         author: "Author1",
-        title: "title1",
-        comments: ""
+        title: "Title1",
+        comments: ["Comment1"]
     }, {
         author: "Author2",
-        title: "title2",
-        comments: ""
+        title: "Title2",
+        comments: ["Comment2"]
     }, {
         author: "Author3",
-        title: "title3",
-        comments: ""
+        title: "Title3",
+        comments: ["Comment3"]
     }
 ];
-output.innerHTML = posts[1].author;
+
+posts.forEach(post => {
+
+    output.innerHTML += "Author: " + post.author + "<br/> Title: " + post.title +  "<br/> Comment: " + post.comments + "<br/><br/>";
+    
+});
+/*for (let index = 0; index < posts.length; index++) {
+    output.innerHTML += "Author: " + posts[index].author + "<br/> Title: " + posts[index].title +"<br/> Comment: " + posts[index].comments;
+} */
