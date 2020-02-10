@@ -68,9 +68,39 @@ var posts = [
 
 posts.forEach(post => {
 
-    output.innerHTML += "Author: " + post.author + "<br/> Title: " + post.title +  "<br/> Comment: " + post.comments + "<br/><br/>";
+    output.innerHTML += "Author: " + post.author + "<br/> Title: " + post.title +  "<br/> Comment: " + post.comments.join(" --- ") + "<br/><br/>";
     
 });
-/*for (let index = 0; index < posts.length; index++) {
+/*
+for (let index = 0; index < posts.length; index++) {
     output.innerHTML += "Author: " + posts[index].author + "<br/> Title: " + posts[index].title +"<br/> Comment: " + posts[index].comments;
 } */
+output.innerHTML = "";
+var movies = [
+{
+    title: "The Shawshank Redemption",
+    rating: "9.2",
+    hasWatched: false,
+},
+{ 
+    title: "The Godfather",
+    rating: "9.1",
+    hasWatched: false,
+}, 
+{
+    title: "Star Wars - The Empire Strikes Back",
+    rating: "8.7",
+    hasWatched: true,
+}, 
+{
+    title: "The Great Dictator",
+    rating: "8.4",
+    hasWatched: true,
+}];
+
+movies.forEach(movie => {
+    if(movie.hasWatched === true)
+    output.innerHTML += "You have seen " + movie.title + "<br/>" + "Rating " + movie.rating + "<br/><br/>";
+    else 
+    output.innerHTML += "You have not seen "+ movie.title + "<br/>" + "Rating " + movie.rating + "<br/><br/>";
+});
