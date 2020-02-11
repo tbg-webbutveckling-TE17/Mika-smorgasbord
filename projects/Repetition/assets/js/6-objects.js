@@ -100,7 +100,19 @@ var movies = [
 
 movies.forEach(movie => {
     if(movie.hasWatched === true)
-    output.innerHTML += "You have seen " + movie.title + "<br/>" + "Rating " + movie.rating + "<br/><br/>";
+    output.innerHTML += "You have seen " + movie.title + "<br/>" + "With a rating of " + "<b/>" + movie.rating + "/10" + " on IMDb" + "<br/><br/>";
     else 
-    output.innerHTML += "You have not seen "+ movie.title + "<br/>" + "Rating " + movie.rating + "<br/><br/>";
+    output.innerHTML += "You have not seen "+ movie.title + "<br/>" + "With a rating of " + "<b/>" + movie.rating + "/10" + " on IMDb" + "<br/><br/>";
 });
+
+output.innerHTML = "";
+var count = {
+    text: "This is some text",
+    add: function(x, y) {
+        return x + y;
+    },
+    rndmNmbr: 32
+};
+
+
+output.innerHTML = count.add(count.rndmNmbr, 5);
