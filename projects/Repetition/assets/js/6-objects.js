@@ -141,25 +141,60 @@ btnRemoveFriend.addEventListener("click", removeMyFriend);
 function removeMyFriend() {
     user.removeFriend();
 };
-
-var btnDmgTaken = document.getElementsByTagName("button")[2];
-var btnManaRefill = document.getElementsByTagName("button")[3];
-var btnCastSpell = document.getElementsByTagName("button")[4];
-
+// Fire Wizard game
+// HTML Element Section
+var btnDmgTaken = document.getElementsByTagName("button")[0];
+var btnManaRefill = document.getElementsByTagName("button")[1];
+var btnCastSpell = document.getElementsByTagName("button")[2];
+var hpBar = document.querySelector(".hp");
+var manaBar = document.querySelector(".mana");
+var heroImg = document.querySelector(".heroImg");
 
 var hero = {
     name: "ArneSlayer",
     hp: 100,
     mana: 30,
     dmgTaken: function() {
-        this.hp = this.hp - 5;
+        if(this.hp <= 50) {
+            this.hp = this.hp - 10;
+            hpBar.innerHTML = this.hp + " hp is getting low!";   
+            heroImg.setAttribute("src", "assets/images/fire-mage/fire-mage-bruised.png");
+        } else {
+            this.hp = this.hp - 10;
+            hpBar.innerHTML = this.hp;
+        }
     },
     manaRefill: function() {
         this.mana += 30;
+        manaBar.innerHTML = this.mana;
     },
     castSpell: function() {
         this.mana -= 25;
-        
+        manaBar.innerHTML = this.mana;
+    },
+    gameOver: function() {
+        if (this.hp <= 0) {
+            hpBar.innerHTML = "Game Over";
+            heroImg.setAttribute("src", "assets/images/fire-mage/fire-mage-dead.png");
+            btnDmgTaken.classList.add("btnGameOver");
+        }
     }
 
 }
+//Hp and mana bar
+hpBar.innerHTML = hero.hp;
+manaBar.innerHTML = hero.mana;
+btnDmgTaken.addEventListener("click", function() {
+    hero.dmgTaken();
+    hero.gameOver();
+    
+});
+
+btnManaRefill.addEventListener("click", function() {
+    hero.manaRefill();
+    //output.innerHTML += "You Gained 30 Mana!" + "</br>";
+});
+btnCastSpell.addEventListener("click", function() {
+    hero.castSpell();
+    //output.innerHTML += "You Cast A Spell!" + "</br>";
+});

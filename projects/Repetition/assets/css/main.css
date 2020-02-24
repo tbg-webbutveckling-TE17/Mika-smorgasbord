@@ -11,26 +11,52 @@ color: white;
 text-shadow: 1px 1px #000;
 font-size: 25pt;
 }
-img {
-    width: 25%;
+.hero-Container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 10px;
 }
-section button {
+.heroimg {
+    width: 30%;
+    margin-bottom: 10px;
+}
+.hero-buttons button {
     padding: 10px;
     text-shadow: 1px 1px 0px black;
     color: white;
     text-transform: uppercase;
     outline:  none;
 }
-section button:before {
+.hp {
+    color: red;
+}
+.mana {
+    color: blue;
+}
+
+.hero-buttons {
+    border: 3px solid white;
+}
+.hero-buttons button:before {
     content:"> ";
 
 }
-section button:nth-child(1) {
+.hero-buttons button:after {
+    content: "!";
+}
+.hero-buttons button:nth-child(1) {
     background-color: red;
 }
-section button:nth-child(2) {
+.hero-buttons button:nth-child(2) {
     background-color: blue;
 }
-section button:nth-child(3) {
+.hero-buttons button:nth-child(3) {
     background-color: orange;
+}
+.btnGameOver {
+    background-color: grey !important;
+    pointer-events: none;
 }
