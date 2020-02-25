@@ -149,6 +149,7 @@ var btnCastSpell = document.getElementsByTagName("button")[2];
 var hpBar = document.querySelector(".hp");
 var manaBar = document.querySelector(".mana");
 var heroImg = document.querySelector(".heroImg");
+var btnRestart = document.querySelector(".btnRestart");
 
 var hero = {
     name: "ArneSlayer",
@@ -172,11 +173,29 @@ var hero = {
         this.mana -= 25;
         manaBar.innerHTML = this.mana;
     },
+    restartGame: function() {
+        btnRestart.style.opacity = 0;
+        hpBar.innerHTML = hero.hp = 100;
+        manaBar.innerHTML = hero.mana = 30;
+        heroImg.setAttribute("src", "assets/images/fire-mage/fire-mage.png");
+        btnDmgTaken.classList.remove("btnGameOver");
+        btnCastSpell.classList.remove("btnGameOver");
+        btnManaRefill.classList.remove("btnGameOver"); 
+        btnRestart.style.opacity = 0;
+        btnRestart.style.height = 0 + "px";
+        btnRestart.style.fontSize = 0 + "px";
+    },
     gameOver: function() {
         if (this.hp <= 0) {
             hpBar.innerHTML = "Game Over";
             heroImg.setAttribute("src", "assets/images/fire-mage/fire-mage-dead.png");
             btnDmgTaken.classList.add("btnGameOver");
+            btnCastSpell.classList.add("btnGameOver");
+            btnManaRefill.classList.add("btnGameOver");
+            btnRestart.style.opacity = 1;
+            btnRestart.style.height = 50 + "px";
+            btnRestart.style.fontSize = 15 + "px";
+            btnRestart.classList.remove("disableBtnRestart");
         }
     }
 
@@ -184,6 +203,7 @@ var hero = {
 //Hp and mana bar
 hpBar.innerHTML = hero.hp;
 manaBar.innerHTML = hero.mana;
+
 btnDmgTaken.addEventListener("click", function() {
     hero.dmgTaken();
     hero.gameOver();
@@ -197,4 +217,8 @@ btnManaRefill.addEventListener("click", function() {
 btnCastSpell.addEventListener("click", function() {
     hero.castSpell();
     //output.innerHTML += "You Cast A Spell!" + "</br>";
+});
+
+btnRestart.addEventListener("click", function() {
+   hero.restartGame();
 });

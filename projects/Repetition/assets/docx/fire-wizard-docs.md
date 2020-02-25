@@ -4,11 +4,11 @@
 * dmgTaken
 * manaRefill
 * castSpell
+* gameOver
+* restartGame
 
 
 ## Future Implementations
-* gameOver
-* restartGame
 * victory
 * enemyMovement
 * hpRefill

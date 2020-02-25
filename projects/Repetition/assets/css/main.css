@@ -19,7 +19,7 @@ font-size: 25pt;
     margin: 5px;
     padding: 10px;
 }
-.heroimg {
+.heroImg {
     width: 30%;
     margin-bottom: 10px;
 }
@@ -30,13 +30,13 @@ font-size: 25pt;
     text-transform: uppercase;
     outline:  none;
 }
+
 .hp {
     color: red;
 }
 .mana {
     color: blue;
 }
-
 .hero-buttons {
     border: 3px solid white;
 }
@@ -59,4 +59,23 @@ font-size: 25pt;
 .btnGameOver {
     background-color: grey !important;
     pointer-events: none;
+}
+.disableBtnRestart {
+    pointer-events: none;
+}
+.btnRestart {
+    text-transform: uppercase;
+    height: 0px;
+    width: 100px;
+    margin: 10px;
+    outline: none;
+    background-image: linear-gradient(to right, red, blue, darkgreen);
+    text-shadow: 1px 1px 0px black;
+    color: white;
+    font-weight: bold;
+    font-size: 0px;
+    font-family: "ninito", "sans-serif";
+    opacity: 0;
+    border-radius: 100px;
+    transition: all 2s;
 }
