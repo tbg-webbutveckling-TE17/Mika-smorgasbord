@@ -2,9 +2,24 @@ h1 {
     text-align: center;
 }
 nav {
-    border: 1px solid blueviolet;
-    
+    margin-bottom: 30px;
 }
-.text1 {
-    text-align: center;
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
 }
+nav ul h3 {
+    border: 1px solid black;
+    margin: 10px;
+}
+main {
+    display: flex;
+    flex-flow: row;
+}
+main section {
+    margin-right: 50px;
+    border: 1px solid black;
+
+}
+
