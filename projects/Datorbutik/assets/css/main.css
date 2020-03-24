@@ -1,25 +1,28 @@
-h1 {
-    text-align: center;
-}
 nav {
-    margin-bottom: 30px;
+    border: 1px solid black;
 }
+
 nav ul {
     list-style-type: none;
-    display: flex;
-    flex-flow: row;
-}
-nav ul h3 {
     border: 1px solid black;
-    margin: 10px;
+    margin: inherit; 
+    display: flex;
+    justify-content: space-around;
+    background-color: darkblue;
+}
+nav ul button {
+    font-size: 25px;
+    border: 1px solid black;
+    margin: inherit;
 }
 main {
     display: flex;
-    flex-flow: row;
+    justify-content: center;
 }
 main section {
     margin-right: 50px;
     border: 1px solid black;
-
 }
-
+main section p {
+   color: green;
+}
