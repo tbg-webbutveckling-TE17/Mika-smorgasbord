@@ -22,7 +22,25 @@ main {
 main section {
     margin-right: 50px;
     border: 1px solid black;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+main section li {
+    list-style-type: none;
+    display: flex;
+    height: 23px;
+    align-items: center;
 }
 main section p {
+    border: 1px solid black;
    color: green;
+   margin: 0px;
+}
+.fa-shopping-cart {
+    color: green;
+    font-size: 20px;
+}
+.fa-user {
+    color: ivory;
+    font-size: 20px;
 }
