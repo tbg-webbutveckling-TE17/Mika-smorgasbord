@@ -1,3 +1,7 @@
+body {
+    background: darkblue;
+    margin: 0px;
+}
 nav {
     border: 1px solid black;
 }
@@ -12,6 +16,7 @@ nav ul {
 }
 nav ul button {
     font-size: 25px;
+    background: springgreen;
     border: 1px solid black;
     margin: inherit;
 }
@@ -20,22 +25,46 @@ main {
     justify-content: center;
 }
 main section {
-    margin-right: 50px;
+    margin-right: 10px;
     border: 1px solid black;
     padding-right: 30px;
+    height: 280px;
+    width: 150px;
     padding-left: 30px;
+    background: dodgerblue;
 }
 main section li {
     list-style-type: none;
     display: flex;
-    height: 23px;
+    height: 32px;
     align-items: center;
+    border: 1px solid black;
+    padding: 1px;
+    width: 100%;
+}
+main section img {
+    margin-bottom: 25px;
+    height: 50%;
+    width: 100%;
 }
 main section p {
-    border: 1px solid black;
-   color: green;
-   margin: 0px;
+   color:black;
+   height: 30px;
+   margin-right: 0px;
+   padding: 1px;
+   width: 60px;
+   font-size: 20px;
+   background: white;
 }
+main section button {
+    background: gold;
+    height: 32px;
+    width: 100px;
+}
+
+
+
+
 .fa-shopping-cart {
     color: green;
     font-size: 20px;
