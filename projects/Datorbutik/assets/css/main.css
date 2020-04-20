@@ -41,9 +41,7 @@ nav {
 
 .primarymenu a:hover {background-color: #ddd;}
 
-.show {
-    display: block;
-}
+
 
 nav ul button {
     font-size: 25px;
@@ -93,7 +91,9 @@ main section button {
     height: 32px;
     width: 100px;
 }
-
+.show {
+    display: block;
+}
 
 
 

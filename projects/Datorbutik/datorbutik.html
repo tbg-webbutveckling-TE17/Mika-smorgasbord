@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datorbutik</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5. 13.0/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -14,12 +14,12 @@
                 <button>start</button>
             </li>
             <li>
-                <button class="itemdropbtn">items</button>
-                <ul class="submenu">
+                <button onclick="dropDownMenu()" class="dropbtn">items</button>
+                <ul id="dropdown" class="submenu">
                     <li>
-                        <a href="#">Länk1</a>   
-                        <a href="#">Länk2</a>
-                        <a href="#">Länk3</a>
+                        <a href="#home">Länk1</a>   
+                        <a href="#about">Länk2</a>
+                        <a href="#contact">Länk3</a>
                     </li>
                 </ul>
             </li>
@@ -62,5 +62,6 @@
             </li>
         </section>
     </main>
+    <script src="/assets/js/datorbutik.js"></script>
 </body>
 </html>
