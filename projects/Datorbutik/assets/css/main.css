@@ -101,12 +101,19 @@ main section button {
 }
 
 
-.cart:hover {
+.cartBtn:hover {
     background-color: cyan;
     transition: 500ms;
 }
-
-
+.cart {
+    display: flex;
+    
+}
+.rmvBtn {
+  height: 28px; 
+  width: 63px;
+  font-size: 15px;
+}
 
 
 

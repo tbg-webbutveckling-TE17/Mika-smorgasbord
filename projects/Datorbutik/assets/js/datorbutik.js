@@ -10,7 +10,7 @@ window.onclick = function(event) {
                 openDropdown.classList.remove("show");}}}
 }
 
-
+var cart =
 
 
 function addToCart() {
