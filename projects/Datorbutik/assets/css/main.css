@@ -66,16 +66,17 @@ main section button {
     cursor: pointer;
 
 }
-.dropbtn:hover, .dropbtn:focus {
-    background-color: rgb(5, 217, 0);
+.dropbtn:hover .dropbtn {
+    background-color: dodgerblue;
 }
-
+.itemsDropDown:hover .submenu {
+    display: block;
+}
 .submenu {
     list-style-type: none;
     display: none;
     padding: 0%;
     position: absolute;
-    position: relative;
     background-color: dodgerblue;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
@@ -95,23 +96,33 @@ main section button {
     background-color: #ddd;
     transition: 500ms;
 }
-
-.show {
-    display: block;
+.cartDropDown {
+    overflow: hidden;
+    float: left;
 }
-
 
 .cartBtn:hover {
-    background-color: cyan;
+    background-color: dodgerblue;
     transition: 500ms;
 }
+.cartDropDown:hover .cart {
+    background-color: dodgerblue;
+    display: block;
+}
 .cart {
-    display: flex;
-    
+    background-color: dodgerblue;
+    display: none;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+}
+.itemsInCart {
+    height: 50%;
+    width: 100%;
 }
 .rmvBtn {
-  height: 28px; 
-  width: 63px;
+  height: 50%; 
+  width: 100%;
   font-size: 15px;
 }
 
