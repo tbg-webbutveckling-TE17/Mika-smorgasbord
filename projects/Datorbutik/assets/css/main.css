@@ -101,10 +101,7 @@ main section button {
     float: left;
 }
 
-.cartBtn:hover {
-    background-color: dodgerblue;
-    transition: 500ms;
-}
+
 .cartDropDown:hover .cart {
     background-color: dodgerblue;
     display: block;
@@ -121,9 +118,15 @@ main section button {
     width: 100%;
 }
 .rmvBtn {
-  height: 50%; 
-  width: 100%;
-  font-size: 15px;
+    background-color: dodgerblue;
+    height: 50%; 
+    width: 100%;
+    font-size: 15px;
+    border: none;
+}
+.rmvBtn:hover {
+    background-color: #ddd;
+    transition: 500ms;
 }
 
 
