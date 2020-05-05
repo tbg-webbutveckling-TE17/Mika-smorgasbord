@@ -116,6 +116,7 @@ main section button {
 .itemsInCart {
     height: 50%;
     width: 100%;
+    color: black;
 }
 .rmvBtn {
     background-color: dodgerblue;
@@ -128,7 +129,17 @@ main section button {
     background-color: #ddd;
     transition: 500ms;
 }
-
+.purchaseBtn {
+    background-color: dodgerblue;
+    height: 50%; 
+    width: 100%;
+    font-size: 15px;
+    border: none;
+}
+.purchaseBtn:hover {
+    background-color: #ddd;
+    transition: 500ms;
+}
 
 
 .fa-shopping-cart {
