@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datorbutik</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5. 13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
 </head>
 <body>
     <nav>
@@ -31,7 +32,10 @@
                 <i class="fas fa-shopping-cart"></i>
                 <button class="cartBtn">Cart</button>
                 <section class="cart">
-                    <p class="itemsInCart">testText</p>
+                    <section class="itemsInCart">
+                        <p class="item">testText</p>
+                        <p class="itemCost">0</p>
+                    </section>
                     <button class="rmvBtn">Remove</br>items</button>
                     <button class="purchaseBtn">Purchase</br>items</button>
                 </section>
@@ -43,7 +47,7 @@
     </header>
     <main>
         <section class="item1">
-            <h2 class="item">item1</h2>
+            <h2 class="itemName">item1</h2>
             <img src="assets/images/Keyboard.jpg" alt="item1">
             <li>
                 <p class="cost">150kr</p>
@@ -51,18 +55,18 @@
             </li>
         </section>
         <section>
-            <h2>item2</h2>
+            <h2 class="itemName">item2</h2>
             <img src="assets/images/Keyboard.jpg" alt="item2">
             <li>
-                <p>50kr</p>
+                <p class="cost">50kr</p>
                 <button class="itemBtn">Add To Cart</button>
             </li>
         </section>
         <section>
-            <h2>item3</h2>
+            <h2 class="itemName">item3</h2>
             <img src="assets/images/Keyboard.jpg" alt="item3">
             <li>
-                <p>100kr</p>
+                <p class="cost">100kr</p>
                 <button class="itemBtn">Add To Cart</button>
             </li>
         </section>

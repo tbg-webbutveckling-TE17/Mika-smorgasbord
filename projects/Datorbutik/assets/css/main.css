@@ -66,6 +66,12 @@ main section button {
     cursor: pointer;
 
 }
+.itemsInCart {
+    display: flex;
+}
+.itemsInCart p {
+    margin-left: 10px;
+}
 .dropbtn:hover .dropbtn {
     background-color: dodgerblue;
 }
