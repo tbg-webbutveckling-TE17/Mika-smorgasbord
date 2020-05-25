@@ -124,14 +124,14 @@ main section button {
     width: 100%;
     color: black;
 }
-.rmvBtn {
+.removeBtn {
     background-color: dodgerblue;
     height: 50%; 
     width: 100%;
     font-size: 15px;
     border: none;
 }
-.rmvBtn:hover {
+.removeBtn:hover {
     background-color: #ddd;
     transition: 500ms;
 }
