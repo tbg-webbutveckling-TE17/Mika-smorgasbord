@@ -22,13 +22,22 @@ var products = {
     }
 };
 removeBtn.addEventListener("click", function() {
-    item.innerHTML = "";
-    totalCost.innerHTML = 0;
-    
+    var removeQuestion = prompt("Do you want to remove all items from your cart? Y/N");
+    if (removeQuestion.toLocaleUpperCase() == "Y")
+    {
+        alert("Removed all items from your cart")
+        item.innerHTML = "";
+        totalCost.innerHTML = 0;
+    }
 })
 purchaseBtn.addEventListener("click", function() {
-   item.innerHTML = "";
-   totalCost.innerHTML = 0;
+    var purchaseQuestion = prompt("Do you want to purchase the items in your cart? Y/N");
+    if (purchaseQuestion.toLocaleUpperCase() == "Y") 
+    {
+        alert("thanks for your purchase!");
+        item.innerHTML = "";
+        totalCost.innerHTML = 0;
+    }
 });
 for (var index = 0; index < itemBtn.length; index++) {
     itemBtn[index].addEventListener("click", function() {
