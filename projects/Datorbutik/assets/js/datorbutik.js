@@ -1,6 +1,3 @@
-
-
-
 var cart = document.querySelector(".cartBtn");
 var item = document.querySelector(".item");
 var itemBtn = document.querySelectorAll(".itemBtn");
@@ -9,15 +6,15 @@ var removeBtn = document.querySelector(".removeBtn")
 var totalCost = document.querySelector(".totalCost");
 var products = {
     index0: {
-        name: "name",
+        name: "item1",
         cost: 150   
     },
     index1: {
-        name: "name",
+        name: "item2",
         cost: 50
     },
     index2: {
-        name: "name",
+        name: "item3",
         cost: 100
     }
 };
@@ -55,8 +52,3 @@ for (var index = 0; index < itemBtn.length; index++) {
             totalCost.innerHTML = products.index2.cost + parseInt(totalCost.innerHTML) + "kr";
         }
     })};
-
-
-
-
-

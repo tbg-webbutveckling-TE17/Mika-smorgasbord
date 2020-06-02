@@ -97,7 +97,6 @@ main section button {
     text-decoration: none;
     display: block;
 }
-
 .primarymenu a:hover {
     background-color: #ddd;
     transition: 500ms;
@@ -106,8 +105,6 @@ main section button {
     overflow: hidden;
     float: left;
 }
-
-
 .cartDropDown:hover .cart {
     background-color: dodgerblue;
     display: block;
@@ -146,8 +143,6 @@ main section button {
     background-color: #ddd;
     transition: 500ms;
 }
-
-
 .fa-shopping-cart {
     color: green;
     font-size: 20px;
